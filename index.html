@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+     <!-- title icon -->
+   <link rel="shortcut icon" href="icon.png" />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- vanilla js file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <header>
+    <h1>Pomodoro Clock</h1>
+   </header>
+
+   <!-- start container -->
+   <div id="container">
+    <!-- start alert section -->
+    <div class="alert">
+      <h1>Set Alert</h1>
+      <button id="alert-increment">&#8679;</button>
+      <p id="alert-count-min">25</p>
+      <p id="cotaion">:</p>
+      <p id="alert-count-sec">00</p>
+      <button id="alert-decrement">&#8681;</button>
+    </div>
+    <!-- end alert section -->
+
+    <div class="anmi">
+      <img src="clock.png" alt="">
+    </div>
+     <!-- start snooze section -->     
+     <div class="snooze">
+      <h1>Snooze</h1>
+      <button id="snooze-increment">&#8679;</button>
+      <p id="snooze-count-min">5</p>
+      <p id="cotaion">:</p>
+      <p id="snooze-count-sec">00</p>
+      <button id="snooze-decrement">&#8681;</button>
+    </div>
+    <!-- end snooze section -->
+   </div>   
+  <!-- end container -->
+
+  <div class="btns">
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+    <button id="pause">Pause</button>
+  </div>
+
+   <button id="dark-btn" class="btn-light"></button><span>Dark Mode</span>
+
+</body>
+</html>

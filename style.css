@@ -1,0 +1,187 @@
+/* global prop */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --main-color:#264348;
+    --dark-color: #19283f;       
+    --section-color: #eff7fa;
+    --red-color:  #ff3150;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+img{
+  width: 250px;
+}
+
+.on {
+  animation: moveClock 0.1s infinite alternate;
+}
+
+@keyframes moveClock {
+  from {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+/* start dark-mode button */
+.dark-mode{
+  background-color: rgb(31, 31, 31);
+}
+
+.btn-dark{
+outline: none;
+width: 40px;
+height: 40px;  
+margin-left: 10%;
+margin-top: 10px;
+border-radius: 50px;
+border: 2px solid var(--section-color);
+transition: 0.4s;
+background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
+  no-repeat center var(--main-color);
+background-size: 25px;
+cursor: pointer;
+}
+.btn-light {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;  
+  margin-left: 10%;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 2px solid var(--section-color);
+  transition: 0.4s;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
+  no-repeat center var(--dark-color);
+  background-size: 20px;
+}
+
+span{
+  color: var(--section-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 8px;
+}
+/* end dark-mode button */
+
+/* start header */
+header{
+  padding: 10px;
+  background-color: yellowgreen;
+}
+header h1{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--dark-color);
+}
+/* end header */
+
+/* start container section */
+#container{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  align-items: center;
+  margin-top: 50px;
+}
+/* end container section */
+
+/* start alert and snooze sections */
+  #alert-total-count ,
+  #snooze-total-count {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--section-color);
+    padding: 10px;
+  }
+
+  #counter{
+    font-size: 22px;
+    font-weight: bolder;
+    color: var(--section-color);
+    border: 2px solid var(--yellow-color);
+    border-radius: 50%;
+    padding: 50px;
+    cursor: pointer;
+  }
+
+
+  .alert, .snooze{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+}
+
+.alert h1 , .snooze h1{
+  color: var(--red-color);
+}
+.alert button, .snooze button{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--section-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--red-color);
+    font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+}
+
+.alert button:hover, .snooze button:hover{
+  background-color: rgb(0, 51, 0);
+  transition: .5s;
+}
+
+.alert p, .snooze p{
+  padding: 2px;  
+  font-size: 2rem;
+  color: var(--section-color);
+}
+/* end alert and snooze sections */
+/* end alert and snooze sections */
+
+/* start button section */
+.btns{
+  padding-top: 50px;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns button{
+  cursor: pointer;
+  padding: 15px;
+  background-color: var(--section-color);
+  color: var(--red-color);
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+}
+
+.btns button:hover{
+  background-color: rgb(0, 51, 0);
+  transition: .5s;
+}
+/* end button section */
